@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Incredibox JSON编辑器</title>
+		<link rel="stylesheet" href="css/editor.css" />
+		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/background.css" />
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			
+			document.addEventListener('plusready', function(){
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。")
+				
+			});
+			
+		</script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</head>
+	<body>
+		<div id="background" class="container_3">
+			<div id="message_place">
+				<div id="message" class="container_2">
+					<div id="message_input">
+						<center>
+							<a>--json--</a>
+							<br />
+							<a>animeName</a>
+							<br />
+							<input type="text" placeholder="animeName" id="polo_animeName"/>
+							<div id="reset">
+								<a>totalFrame</a>
+								<br />
+								<input type="number" placeholder="totalFrame" id="polo_totalFrame"/>
+								<br />
+								<a>headHeight</a>
+								<br />
+								<input type="number" placeholder="headHeight" id="polo_headHeight"/>
+							</div>
+							<a>texture</a>
+							<br />
+							<a>*Please choose HD texture*</a>
+							<br />
+							<input type="file" id="preview_polo_texture" onchange="previewFile()" >
+							<br />
+							<img id="polo_img1" width="150px" height="100px"/>
+							<br />
+							<a>--app.js--</a>
+							<br />
+							<a>totalframe</a>
+							<br />
+							<input type="number" placeholder="totalframe" id="polo_app_totalframe"/>
+							<br />
+							<a>looptime</a>
+							<br />
+							<input type="number" placeholder="looptime" id="polo_looptime"/>
+							<br />
+							<br />
+							<button id="handIn" onclick="handIn()">hand in</button>
+							<br /><br /><br />
+							<!--<a>!Modified data is not supported, please confirm and submit!</a>-->
+						</center>
+					</div>
+				</div>
+			</div>
+			<div id="preview">
+				<div id="choose">
+					<button id="choose_polo" onclick="choose_polo()">polo</button>
+					<button id="choose_texture" onclick="choose_texture()">texture</button>
+				</div>
+				<a id="csurrentList"></a>
+				<div id="polo">
+					<div class="polo_img" id="polo_head"><div class="polo_img" id="polo_head_move"><img id="polo_img2"/></div></div>
+					<div class="polo_img" id="polo_body"><img id="polo_img3"/></div>
+				</div>
+				<div id="texture">
+					<div class="polo_img" id="polo_texture">
+						<img id="polo_img4"/>
+						<div id="polo_texture_body"></div>
+						<div id="polo_texture_head"></div>
+					</div>
+				</div>
+				<button onclick="previewAnimation()" id="previewAnimation_button"><ion-icon name="film-outline"></ion-icon></button>
+				<button onclick="jump()" id="jump_button"><ion-icon name="swap-horizontal-outline"></ion-icon></button>
+				<div id="previewAnimation">
+					<div class="container_4" id="previewAnimation_div">
+						<button onclick="previewAnimation_close()" id="previewAnimation_close"><img id="deriveJSON_close_img" src="img/close.png"/></button>
+						<div id="polo">
+							<div class="polo_img" id="polo_head_preview"><div class="polo_img" id="polo_head_move_preview"><img id="polo_img5"/></div></div>
+							<div class="polo_img" id="polo_body_preview"><img id="polo_img6"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="control" class="container_4">
+				<center>
+					<button onclick="up()"><ion-icon name="arrow-up-outline"></ion-icon></button>
+					<br />
+					<button onclick="left()"><ion-icon name="arrow-back-outline"></ion-icon></button>
+					<button onclick="down()"><ion-icon name="arrow-down-outline"></ion-icon></button>
+					<button onclick="right()"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+					<br /><br />
+					<button onclick="lastFrame()" id="last"><ion-icon name="arrow-back-outline"></ion-icon></button>
+					<a id="currentFrame"></a>
+					<button onclick="nextFrame()" id="next"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+					<br />
+					<button onclick="deriveJSON()" id="deriveJSON_button"><ion-icon name="download-outline"></ion-icon></button>
+					<button onclick="location.href='index.html'" id="back"><ion-icon name="chevron-back-outline"></ion-icon></button>
+					<button onclick="changeJSON()" id="changeJSON_button"><ion-icon name="options-outline"></ion-icon></button>
+				</center>
+				<div id="deriveJSON" class="container_2">
+					<div id="deriveJSON_input">
+						<button onclick="deriveJSON_close()" id="deriveJSON_close"><img id="deriveJSON_close_img" src="img/close.png"/></button>
+						<center>
+							<div id="downloadJSON">
+								<button onclick="downloadJSON()"><ion-icon name="download-outline"></ion-icon></button>
+								<br />
+								<a>download</a>
+							</div>
+							<div id="copyJSON">
+								<button onclick="copyJSON()"><ion-icon name="documents-outline"></ion-icon></button>
+								<br />
+								<a>copy</a>
+							</div>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
