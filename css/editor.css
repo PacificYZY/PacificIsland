@@ -228,6 +228,12 @@ img {
 	bottom: 5px;
 	right: 5px;
 }
+#jumpFrame{
+ position: absolute;
+	bottom: 50px;
+	right: 5px;
+	width: 75px;
+}
 #deriveJSON{
 	position: absolute;
 	top: 5%;
@@ -331,7 +337,7 @@ img {
 }
 #polo_img6{
 	position: relative;
-	left: 0;
+	left: var(--polo_body);
 	width: var(--polo_img_width);
 	height: var(--polo_img_height);
 }
