@@ -210,6 +210,13 @@ function nextFrame(){
         refreshFrame();
     }
 }
+function jump() {
+    jumpFrame=document.getElementById('jumpFrame');
+    if(jumpFrame.value!=="") {
+        currentFrame=jumpFrame.value;
+        refreshFrame();
+    }
+}
 
 // ============ 导出功能 ============
 function download(filename, text) {
