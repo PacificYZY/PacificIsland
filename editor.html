@@ -45,7 +45,7 @@
 							<br />
 							<input type="file" id="preview_polo_texture" onchange="previewFile()" >
 							<br />
-							<img id="polo_img1" width="150px" height="100px"/>
+							<img id="polo_img1" height="100px"/>
 							<br />
 							<a>--app.js--</a>
 							<br />
@@ -84,10 +84,11 @@
 				</div>
 				<button onclick="previewAnimation()" id="previewAnimation_button"><ion-icon name="film-outline"></ion-icon></button>
 				<button onclick="jump()" id="jump_button"><ion-icon name="swap-horizontal-outline"></ion-icon></button>
+				<input type="number" placeholder="Jump frame" id="jumpFrame"/>
 				<div id="previewAnimation">
 					<div class="container_4" id="previewAnimation_div">
 						<button onclick="previewAnimation_close()" id="previewAnimation_close"><img id="deriveJSON_close_img" src="img/close.png"/></button>
-						<div id="polo">
+						<div id="polo_preview">
 							<div class="polo_img" id="polo_head_preview"><div class="polo_img" id="polo_head_move_preview"><img id="polo_img5"/></div></div>
 							<div class="polo_img" id="polo_body_preview"><img id="polo_img6"/></div>
 						</div>
