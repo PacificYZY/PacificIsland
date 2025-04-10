@@ -203,19 +203,57 @@ function copyToClipboard(text) {
     }
 }
 function downloadJSON(){
-    var arrayFrame="";
-    for(var i=0;i<polo_totalFrame.value;i++){
-        if(i!==polo_totalFrame.value-1){
-            l=getList(allList[i][0],allList[i][1],allList[i][2],allList[i][3]);
-            arrayFrame=arrayFrame+l+",\n\t\t";
-        }
-        else{
-            l=getList(allList[i][0],allList[i][1],allList[i][2],allList[i][3]);
-            arrayFrame=arrayFrame+l;
+    // 1. 生成JSON内容（保持您原有逻辑）
+    var arrayFrame = "";
+    for(var i = 0; i < polo_totalFrame.value; i++){
+        if(i !== polo_totalFrame.value - 1){
+            l = getList(allList[i][0], allList[i][1], allList[i][2], allList[i][3]);
+            arrayFrame = arrayFrame + l + ",\n\t\t";
+        } else {
+            l = getList(allList[i][0], allList[i][1], allList[i][2], allList[i][3]);
+            arrayFrame = arrayFrame + l;
         }
     }
-    fileJSON='{\n\t"animeName":"'+polo_animeName.value+'",\n\t"percentageMax":"'+0.2+'",\n\t"totalFrame":"'+polo_totalFrame.value+'",\n\t"width":"'+164+'",\n\t"height":"'+380+'",\n\t"headHeight":"'+polo_headHeight.value+'",\n\t"arrayFrame":[\n\t\t'+arrayFrame+'\n\t]\n}';
-    download(polo_animeName.value+".json",fileJSON);
+    
+    const fileJSON = '{\n\t"animeName":"'+polo_animeName.value+'",\n\t"percentageMax":"'+0.2+'",\n\t"totalFrame":"'+polo_totalFrame.value+'",\n\t"width":"'+164+'",\n\t"height":"'+380+'",\n\t"headHeight":"'+polo_headHeight.value+'",\n\t"arrayFrame":[\n\t\t'+arrayFrame+'\n\t]\n}';
+    const fileName = polo_animeName.value + ".json";
+
+    // 2. 增强版下载函数
+    const blob = new Blob([fileJSON], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    
+    // 方法1: 标准下载（桌面浏览器）
+    if (typeof navigator.msSaveBlob !== 'undefined') {
+        // IE专用方法
+        navigator.msSaveBlob(blob, fileName);
+    } else {
+        // 创建隐藏的可下载链接
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        
+        // 触发点击
+        a.click();
+        
+        // 清理
+        setTimeout(() => {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }, 100);
+    }
+
+    // 方法2: 移动端备用方案（如果标准方法失败）
+    setTimeout(() => {
+        if (document.querySelector('a[download]')) {
+            // 如果下载未触发（移动端常见问题）
+            alert('如果未自动下载，请使用以下方法：\n\n1. 长按下方链接\n2. 选择"另存为"');
+            const fallbackLink = document.createElement('div');
+            fallbackLink.innerHTML = `<a href="${url}" target="_blank">点击这里手动保存文件</a>`;
+            document.body.appendChild(fallbackLink);
+        }
+    }, 500);
 }
 function copyJSON(){
     var arrayFrame="";
@@ -282,56 +320,69 @@ function refreshFrame_preview(){
 }
 
 // ============ 动画控制 ============
+
 let animationId = null;
 let isPlaying = false;
 let animationStartTime = 0;
 let lastFrameUpdateTime = 0;
 let bAudioPlayed = false;
+let frameCount = 0; // 新增帧计数器
 
-function previewAnimation(){
+function previewAnimation() {
     if (isPlaying) return;
     
-    // 初始化
+    // 初始化状态
     Animation = 50;
     document.documentElement.style.setProperty("--Animation", Animation + "%");
     isPlaying = true;
     previewFrame = 1;
+    frameCount = 0; // 重置帧计数器
     animationStartTime = performance.now();
     lastFrameUpdateTime = animationStartTime;
     bAudioPlayed = false;
     
-    // 计算参数
+    // 计算参数（使用更精确的时间控制）
     const totalFrames = Number(polo_totalFrame.value);
-    const totalPlayTime = loopB == 1 ? 
-        Number(polo_looptime.value) * 2 : 
-        Number(polo_looptime.value);
-    
+    const baseDuration = Number(polo_looptime.value);
+    const totalPlayTime = loopB == 1 ? baseDuration * 2 : baseDuration;
     const frameDuration = totalPlayTime / totalFrames;
-    const halfWayTime = totalPlayTime / 2; // 音频B触发点
+    const halfWayTime = totalPlayTime / 2;
+
+    // 手机设备检测和节流处理
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const targetFPS = isMobile ? 30 : 60; // 手机设为30FPS，电脑60FPS
+    const frameInterval = 1000 / targetFPS;
+    let lastFrameTime = animationStartTime;
 
     function animate(currentTime) {
         if (!isPlaying) return;
         
         const elapsed = currentTime - animationStartTime;
+        const deltaTime = currentTime - lastFrameTime;
         
-        if(loopB == 1 && !bAudioPlayed && elapsed >= halfWayTime) {
+        // 音频触发逻辑（带容差范围）
+        if (loopB == 1 && !bAudioPlayed && elapsed >= halfWayTime - 16 && elapsed <= halfWayTime + 16) {
             playFromStart_b();
             bAudioPlayed = true;
-            //console.log(`B音频触发 @ ${elapsed.toFixed(1)}ms`);
         }
         
-        const targetFrame = Math.min(
-            Math.floor(elapsed / frameDuration) + 1,
-            totalFrames
-        );
-        
-        if (targetFrame !== previewFrame) {
-            previewFrame = targetFrame;
-            refreshFrame_preview();
-            lastFrameUpdateTime = currentTime;
-            //console.log(`更新到帧: ${previewFrame}/${totalFrames} @ ${elapsed.toFixed(1)}ms`);
+        // 基于时间的帧更新（更精确）
+        if (deltaTime >= frameInterval) {
+            const targetFrame = Math.min(
+                Math.floor(elapsed / frameDuration) + 1,
+                totalFrames
+            );
+            
+            if (targetFrame !== previewFrame) {
+                previewFrame = targetFrame;
+                refreshFrame_preview();
+                frameCount++;
+            }
+            
+            lastFrameTime = currentTime - (deltaTime % frameInterval);
         }
         
+        // 继续动画直到总时间结束
         if (elapsed < totalPlayTime) {
             animationId = requestAnimationFrame(animate);
         } else {
@@ -339,7 +390,31 @@ function previewAnimation(){
         }
     }
     
-    animationId = requestAnimationFrame(animate);
+    // 使用更精确的定时器
+    if (typeof requestAnimationFrame !== 'undefined') {
+        animationId = requestAnimationFrame(animate);
+    } else {
+        // 备用方案（适用于不支持requestAnimationFrame的环境）
+        const startTime = Date.now();
+        const intervalId = setInterval(() => {
+            const elapsed = Date.now() - startTime;
+            const targetFrame = Math.min(
+                Math.floor(elapsed / frameDuration) + 1,
+                totalFrames
+            );
+            
+            if (targetFrame !== previewFrame) {
+                previewFrame = targetFrame;
+                refreshFrame_preview();
+            }
+            
+            if (elapsed >= totalPlayTime) {
+                clearInterval(intervalId);
+                stopAnimation();
+            }
+        }, frameDuration);
+    }
+    
     playFromStart();
 }
 
@@ -355,7 +430,7 @@ function stopAnimation() {
     pauseAudio_b();
 }
 
-function previewAnimation_close(){
+function previewAnimation_close() {
     stopAnimation();
 }
 
