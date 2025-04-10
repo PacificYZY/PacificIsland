@@ -1,0 +1,390 @@
+a{
+	font-size: 16px;
+	color: #fff;
+	text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+	/*display: inline-flex;*/
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border: 0;
+	z-index: 1;
+	user-select: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	white-space: unset;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	font-weight: 900;
+	transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+b{
+	font-size: 8px;
+	color: #fff;
+	text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+	/*display: inline-flex;*/
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border: 0;
+	z-index: 1;
+	user-select: none;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	white-space: unset;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	font-weight: 450;
+	transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+input{
+	width: 150px;
+	height: 30px;
+	border-radius: 0px;
+}
+img {
+	pointer-events: none;
+}
+
+#background{
+	overflow: hidden;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+#message_place{
+	position: absolute;
+	top: 5%;
+	left: var(--message);
+	transition: all 1s;
+}
+#message{
+	position: absolute;
+	top: 0;
+	left: -175px;
+	width: 350px;
+	height: 750px;
+	/*background-color: black;*/
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #282828,
+				-5px -5px 10px #505050;
+	z-index: 2;
+	overflow: auto;
+}
+#message_input{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+}
+#preview{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 70%;
+}
+#control{
+	position: absolute;
+	top: 70%;
+	left: 0%;
+	width: 100%;
+	height: 30%;
+	box-shadow: 0px -10px 10px #191a1a;
+}
+/*
+#mod{
+	position: relative;
+	left: var(--Y);
+	width: 50px;
+	height: 50px;
+	background-color: black;
+}
+*/
+#choose_polo{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 50%;
+	height: 15%;
+}
+#choose_texture{
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	width: 50%;
+	height: 15%;
+}
+#csurrentList{
+	position: absolute;
+	top: 15%;
+	right: 0%;
+}
+#polo{
+	position: absolute;
+	top: 0%;
+	left: var(--polo);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/*background-color: black;*/
+	transition: all 0.6s;
+}
+#texture{
+	position: absolute;
+	top: 15%;
+	left: var(--texture);
+	width: 100%;
+	height: 85%;
+	overflow: auto;
+	/*background-color: black;*/
+	transition: all 0.6s;
+}
+.polo_img{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+#polo_head{
+	width: 164px;
+	height: var(--polo_headHeight);
+	bottom: var(--polo_head);
+	/*background-color: black;*/
+}
+#polo_head_move{
+	width: 164px;
+	height: var(--polo_headHeight);
+	left: var(--x2);
+	top: var(--y2);
+	transform: translate(0%, 0%);
+	overflow: hidden;
+	outline: 2px solid red;
+	/*background-color: black;*/
+}
+#polo_body{
+	width: 164px;
+	height: 380px;
+	bottom:0;
+	z-index: -1;
+	overflow: hidden;
+	outline: 2px solid blue;
+	/*background-color: black;*/
+}
+#polo_texture{
+	left: 0;
+	transform: translate(0%, 0%);
+}
+#polo_texture_head{
+	position: absolute;
+	width: 164px;
+	height: var(--polo_headHeight);
+	top: var(--y1_outline);
+	left: var(--x1_outline);
+	outline: 2px solid red;
+	transition: all 0.6s;
+}
+#polo_texture_body{
+	position: absolute;
+	width: 164px;
+	height: 380px;
+	top: 0;
+	left: 164px;
+	outline: 2px solid blue;
+}
+#polo_img2{
+	position: relative;
+	top: var(--y1);
+	left: var(--x1);
+	width: var(--polo_img_width);
+	height: var(--polo_img_height);
+	z-index: -1;
+}
+#polo_img3{
+	position: relative;
+	left: var(--polo_body);
+	width: var(--polo_img_width);
+	height: var(--polo_img_height);
+}
+#polo_img4{
+	position: relative;
+	top: 0;
+	left: 0;
+	/*width: var(--polo_img_width);
+	height: var(--polo_img_height);*/
+}
+.click{
+	width: 25px;
+	height: 25px;
+}
+/*#last{
+	width: 20px;
+	height: 30px;
+}
+#next{
+	width: 20px;
+	height: 30px;
+}*/
+#back{
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+#deriveJSON_button{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+#changeJSON_button{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+#previewAnimation_button{
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+#jump_button{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+#jumpFrame{
+ position: absolute;
+	bottom: 50px;
+	right: 5px;
+	width: 75px;
+}
+#deriveJSON{
+	position: absolute;
+	top: 5%;
+	left: var(--deriveJSON);
+	width: 90%;
+	height: 90%;
+	/*background-color: black;*/
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #282828,
+				-5px -5px 10px #505050;
+	z-index: 2;
+	overflow: auto;
+	transition: all 1s;
+}
+#deriveJSON_input{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 50%;
+}
+#downloadJSON{
+	position: absolute;
+	left: 0%;
+	width: 50%;
+}
+#copyJSON{
+	position: absolute;
+	right: 0%;
+	width: 50%;
+}
+#deriveJSON_close{
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 100px;
+	height: 45px;
+}
+#deriveJSON_close_img{
+	width: 25px;
+	height: 25px;
+}
+
+#previewAnimation{
+	position: absolute;
+	top: 0;
+	left: var(--Animation);
+	width: 95%;
+	height: 95%;
+}
+#previewAnimation_div{
+	position: absolute;
+	top: 50px;
+	left: -50%;
+	width: 100%;
+	height: 90%;
+	/*background-color: black;*/
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #282828,
+				-5px -5px 10px #505050;
+	z-index: 1;
+	overflow: auto;
+}
+#previewAnimation_close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 45px;
+	height: 45px;
+}
+#polo_head_preview{
+	width: 164px;
+	height: var(--polo_headHeight);
+	bottom: var(--polo_head);
+	/*background-color: black;*/
+}
+#polo_head_move_preview{
+	width: 164px;
+	height: var(--polo_headHeight);
+	left: var(--x2_preview);
+	top: var(--y2_preview);
+	transform: translate(0%, 0%);
+	overflow: hidden;
+	/*background-color: black;*/
+}
+#polo_body_preview{
+	width: 164px;
+	height: 380px;
+	bottom:0;
+	z-index: -1;
+	overflow: hidden;
+	/*background-color: black;*/
+}
+#polo_img5{
+	position: relative;
+	top: var(--y1_preview);
+	left: var(--x1_preview);
+	width: var(--polo_img_width);
+	height: var(--polo_img_height);
+	z-index: -1;
+}
+#polo_img6{
+	position: relative;
+	left: var(--polo_body);
+	width: var(--polo_img_width);
+	height: var(--polo_img_height);
+}
+
+.json-import-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.json-import-btn:hover {
+  background-color: #45a049;
+}
+
+#jsonDataDisplay {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}

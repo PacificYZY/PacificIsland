@@ -1,0 +1,104 @@
+a{
+	font-size: 16px;
+	color: #fff;
+	text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+	/*display: inline-flex;*/
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border: 0;
+	z-index: 1;
+	user-select: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	white-space: unset;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	font-weight: 900;
+	transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+b{
+	font-size: 8px;
+	color: #fff;
+	text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+	/*display: inline-flex;*/
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border: 0;
+	z-index: 1;
+	user-select: none;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	white-space: unset;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	font-weight: 450;
+	transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+img {
+	pointer-events: none;
+}
+
+#background{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#index{
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	/*background-color: black;*/
+}
+#new{
+	width: 100px;
+	height: 50px;
+}
+.othor{
+	width: 100px;
+	height: 30px;
+}
+#about_place{
+	position: absolute;
+	top: 50%;
+	left: var(--about);
+	transition: all 1s;
+}
+#about{
+	position: absolute;
+	top: -250px;
+	left: -150px;
+	width: 300px;
+	height: 500px;
+	/*background-color: black;*/
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #282828,
+				-5px -5px 10px #505050;
+	z-index: 2;
+	overflow: auto;
+}
+#about_in{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+}
+#aboutClose{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width: 45px;
+	height: 45px;
+}
+#aboutClose_img{
+	width: 25px;
+	height: 25px;
+}
+
+#head{
+	border-radius: 75px;
+}
