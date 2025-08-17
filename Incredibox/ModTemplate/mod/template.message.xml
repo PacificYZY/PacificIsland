@@ -82,6 +82,7 @@
                 frameborder="0"
                 allowfullscreen="true"
                 sandbox="allow-same-origin allow-scripts allow-popups">
+                <span>连接不到Discord</span>
             </iframe>
         </text>
     </page>
@@ -145,5 +146,6 @@
     </page>
 
 </body>
+
 
 
