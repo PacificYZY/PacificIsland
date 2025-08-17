@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <body>
     <page id="-3">
-        <image>mod/img/PacificY.jpg</image>
+        <image>https://pacificyzy.github.io/PacificIsland/Incredibox/ModTemplate/mod/img/PacificY.jpg</image>
         <title>
             <span>模组引擎由</span>
             <span style="
@@ -86,7 +86,7 @@
         </text>
     </page>
     <page id="-1"> 
-        <image>mod/img/merch-cdvinyl.png</image>
+        <image>https://pacificyzy.github.io/PacificIsland/Incredibox/ModTemplate/mod/img/merch-cdvinyl.png</image>
         <title>
             <span>请支持</span>
             <span style="
@@ -145,4 +145,5 @@
     </page>
 
 </body>
+
 
