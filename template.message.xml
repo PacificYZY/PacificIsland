@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+    <page id="-3">
+        <image>mod/img/PacificY.jpg</image>
+        <title>
+            <span>模组引擎由</span>
+            <span style="
+                background: linear-gradient(to right, red, orange);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">PacificY</span>
+            <span>制作</span>
+        </title>
+        <text>
+            <span class="mod-text-left">
+                <span style="
+                    background: linear-gradient(to right, red, orange);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">PacificY</span>
+                <span>：代码、贴图</span>
+            </span><br/>
+            <span class="mod-text-left">
+                <span style="
+                    background: linear-gradient(to right, #6F01FE, #00F4FF);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">PE_Ink</span>
+                <span>：大部分Demo贴图绘制</span>
+            </span><br/>
+            <span class="mod-text-left">
+                <span style="
+                    background: linear-gradient(to right, purple, pink);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">Para</span>
+                <span>：翻译</span>
+            </span><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://b23.tv/oLNjc8J')">
+                <img src="mod/logo/bilibili.svg" alt="SVG image" width="15px"/>
+                <span>BiliBili</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://discord.com/invite/S4kU3JeA')">
+                <img src="mod/logo/discord.svg" alt="SVG image" width="15px"/>
+                <span>Discord</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.youtube.com/@PacificYZY')">
+                <img src="mod/logo/youtube.svg" alt="SVG image" width="15px"/>
+                <span>YouTube</span>
+            </button><br/><br/><br/>
+            
+            <span>左侧插图由</span>
+            <span style="
+                background: linear-gradient(to right, #6F01FE, #00F4FF);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">PE_Ink</span>
+            <span>绘制</span>
+        </text>
+    </page>
+    <page id="-2"> 
+        <image></image>
+        <title>
+            <span style="
+                background: linear-gradient(to right, red, orange);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">PacificY</span>
+            <span>的</span>
+            <span style="
+                background: linear-gradient(to right, purple, blue);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Discord</span>
+            <span>服务器</span>
+        </title>
+        <text>
+            <iframe 
+                src="https://discord.com/widget?id=1192461672821043300"
+                width="80%" 
+                height="250px" 
+                frameborder="0"
+                allowfullscreen="true"
+                sandbox="allow-same-origin allow-scripts allow-popups">
+            </iframe>
+        </text>
+    </page>
+    <page id="-1"> 
+        <image>mod/img/merch-cdvinyl.png</image>
+        <title>
+            <span>请支持</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">SO FAR SO GOOD</span>
+            <span>!!!</span>
+        </title>
+        <text>
+            <span>Incredibox由</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">SO FAR SO GOOD</span>
+            <span>制作，</span><br/>
+            <span>如果没有</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Allan</span>
+            <span>、</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Romain</span>
+            <span>和</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Incredible Polo</span>
+            <span>的努力</span><br/>
+            <span>就没有今天的Incredibox!!!</span><br/><br/>
+            <span>订阅Incredibox!</span><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.Incredibox.com')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>Incredibox</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.sofarsogood.fr')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>SO FAR SO GOOD</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.incredibox.com/info/store/')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>Buy Incredibox</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.incredibox.com/demo')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>Incredibox Demo</span>
+            </button><br/>
+        </text>
+    </page>
+</body>
