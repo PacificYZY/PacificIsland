@@ -134,7 +134,7 @@
                 <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
                 <span>SO FAR SO GOOD</span>
             </button><br/><br/>
-            <button class="mod-text-left" onclick="openExternal('https://www.incredibox.com/info/store/')">
+            <button class="mod-text-left" onclick="openExternal('https://www.incredibox.com/info/store')">
                 <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
                 <span>Buy Incredibox</span>
             </button><br/><br/>
@@ -146,6 +146,7 @@
     </page>
 
 </body>
+
 
 
 
