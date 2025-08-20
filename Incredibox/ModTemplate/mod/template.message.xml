@@ -49,14 +49,12 @@
             ">PE_Ink</span>
             <span>绘制</span><br/>
             <span>文言文和梗体中文由</span>
-            <span class="mod-text-left">
-                <span style="
-                    background: linear-gradient(to right, purple, pink);
-                    -webkit-background-clip: text;
-                    color: transparent;
-                ">Para</span>
-                <span>提供</span>
-            </span>
+            <span style="
+                background: linear-gradient(to right, purple, pink);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Para</span>
+            <span>提供</span>
         </text>
     </page>
     <page id="-2"> 
