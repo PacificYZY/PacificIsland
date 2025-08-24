@@ -47,7 +47,7 @@
             <button class="mod-text-left" onclick="openExternal('https://www.youtube.com/@PacificYZY')">
                 <img src="mod/logo/youtube.svg" alt="SVG image" width="15px"/>
                 <span>YouTube</span>
-            </button><br/><br/><br/><br/><br/>
+            </button><br/><br/><br/><br/>
             
             <span>左侧插图由</span>
             <span style="
@@ -146,6 +146,7 @@
     </page>
 
 </body>
+
 
 
 
