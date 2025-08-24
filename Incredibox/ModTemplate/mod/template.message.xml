@@ -30,10 +30,10 @@
             </span><br/>
             <span class="mod-text-left">
                 <span style="
-                    background: linear-gradient(to right, #FF596F, #385692);
+                    background: linear-gradient(to right, #385692, #FF596F);
                     -webkit-background-clip: text;
                     color: transparent;
-                ">注射资源</span>
+                ">注释の眼</span>
                 <span>：部分贴图</span>
             </span><br/><br/>
             <button class="mod-text-left" onclick="openExternal('https://b23.tv/oLNjc8J')">
@@ -47,7 +47,7 @@
             <button class="mod-text-left" onclick="openExternal('https://www.youtube.com/@PacificYZY')">
                 <img src="mod/logo/youtube.svg" alt="SVG image" width="15px"/>
                 <span>YouTube</span>
-            </button><br/><br/><br/>
+            </button><br/><br/><br/><br/><br/>
             
             <span>左侧插图由</span>
             <span style="
@@ -146,6 +146,7 @@
     </page>
 
 </body>
+
 
 
 
