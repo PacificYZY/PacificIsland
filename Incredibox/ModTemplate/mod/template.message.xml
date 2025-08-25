@@ -13,7 +13,7 @@
         </title>
         <text>
             <span class="mod-text-left">
-                <span style="
+                <span onclick="openExternal('https://b23.tv/oLNjc8J')" style="
                     background: linear-gradient(to right, red, orange);
                     -webkit-background-clip: text;
                     color: transparent;
@@ -21,7 +21,7 @@
                 <span>：代码、贴图</span>
             </span><br/>
             <span class="mod-text-left">
-                <span style="
+                <span onclick="openExternal('https://b23.tv/E1YzqCS')" style="
                     background: linear-gradient(to right, #6F01FE, #00F4FF);
                     -webkit-background-clip: text;
                     color: transparent;
@@ -29,11 +29,11 @@
                 <span>：大部分Demo贴图绘制</span>
             </span><br/>
             <span class="mod-text-left">
-                <span style="
+                <span onclick="openExternal('https://b23.tv/s9XKlHE')" style="
                     background: linear-gradient(to right, #385692, #FF596F);
                     -webkit-background-clip: text;
                     color: transparent;
-                ">注释の眼</span>
+                ">注视の眼</span>
                 <span>：部分贴图</span>
             </span><br/><br/>
             <button class="mod-text-left" onclick="openExternal('https://b23.tv/oLNjc8J')">
