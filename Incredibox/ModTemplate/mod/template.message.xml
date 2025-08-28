@@ -40,7 +40,7 @@
                 <img src="mod/logo/bilibili.svg" alt="SVG image" width="15px"/>
                 <span>BiliBili</span>
             </button><br/><br/>
-            <button class="mod-text-left" onclick="openExternal('https://discord.com/invite/S4kU3JeA')">
+            <button class="mod-text-left" onclick="openExternal('https://discord.com/invite/aNPHwThqxW')">
                 <img src="mod/logo/discord.svg" alt="SVG image" width="15px"/>
                 <span>Discord</span>
             </button><br/><br/>
