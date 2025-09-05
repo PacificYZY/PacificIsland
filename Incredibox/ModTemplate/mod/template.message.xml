@@ -26,7 +26,7 @@
                     -webkit-background-clip: text;
                     color: transparent;
                 ">PE_Ink</span>
-                <span>：大部分Demo贴图绘制</span>
+                <span>：大部分Demo贴图绘制（包括右侧插图绘制）</span>
             </span><br/>
             <span class="mod-text-left">
                 <span onclick="openExternal('https://b23.tv/s9XKlHE')" style="
@@ -34,7 +34,7 @@
                     -webkit-background-clip: text;
                     color: transparent;
                 ">注视の眼</span>
-                <span>：部分贴图</span>
+                <span>：部分贴图（以及Demo角色的提供）</span>
             </span><br/><br/>
             <button class="mod-text-left" onclick="openExternal('https://b23.tv/oLNjc8J')">
                 <img src="mod/logo/bilibili.svg" alt="SVG image" width="15px"/>
@@ -49,13 +49,13 @@
                 <span>YouTube</span>
             </button><br/><br/>
             
-            <span>左侧插图由</span>
-            <span style="
-                background: linear-gradient(to right, #6F01FE, #00F4FF);
-                -webkit-background-clip: text;
-                color: transparent;
-            ">PE_Ink</span>
-            <span>绘制</span><br/>
+            <span>获取最新模板请关注</span>
+            <span onclick="openExternal('https://b23.tv/oLNjc8J')" style="
+                    background: linear-gradient(to right, red, orange);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">PacificY</span>
+            <span>的社交账号🧡</span>
         </text>
     </page>
     <page id="-2"> 
@@ -146,6 +146,7 @@
     </page>
 
 </body>
+
 
 
 
