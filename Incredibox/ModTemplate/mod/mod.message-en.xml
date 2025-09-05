@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+    <page id="-3">
+        <image>https://pacificyzy.github.io/PacificIsland/Incredibox/ModTemplate/mod/img/PacificY.jpg</image>
+        <title>
+            <span>Mod engine made by</span>
+            <span style="
+                background: linear-gradient(to right, red, orange);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">PacificY</span>
+        </title>
+        <text>
+            <span class="mod-text-left">
+                <span onclick="openExternal('https://b23.tv/oLNjc8J')" style="
+                    background: linear-gradient(to right, red, orange);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">PacificY</span>
+                <span>: Code, Textures</span>
+            </span><br/>
+            <span class="mod-text-left">
+                <span onclick="openExternal('https://b23.tv/E1YzqCS')" style="
+                    background: linear-gradient(to right, #6F01FE, #00F4FF);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">PE_Ink</span>
+                <span>: Most Demo texture drawing (including the illustration on the right)</span>
+            </span><br/>
+            <span class="mod-text-left">
+                <span onclick="openExternal('https://b23.tv/s9XKlHE')" style="
+                    background: linear-gradient(to right, #385692, #FF596F);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">注视の眼</span>
+                <span>: Some textures (and provision of Demo characters)</span>
+            </span><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://b23.tv/oLNjc8J')">
+                <img src="mod/logo/bilibili.svg" alt="SVG image" width="15px"/>
+                <span>BiliBili</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://discord.com/invite/aNPHwThqxW')">
+                <img src="mod/logo/discord.svg" alt="SVG image" width="15px"/>
+                <span>Discord</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.youtube.com/@PacificYZY')">
+                <img src="mod/logo/youtube.svg" alt="SVG image" width="15px"/>
+                <span>YouTube</span>
+            </button><br/><br/>
+            
+            <span>Follow</span>
+            <span onclick="openExternal('https://b23.tv/oLNjc8J')" style="
+                    background: linear-gradient(to right, red, orange);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                ">PacificY</span>
+            <span>'s social media accounts to get the latest template🧡</span>
+        </text>
+    </page>
+    <page id="-2"> 
+        <image></image>
+        <title>
+            <span style="
+                background: linear-gradient(to right, red, orange);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">PacificY</span>
+            <span>'s</span>
+            <span style="
+                background: linear-gradient(to right, purple, blue);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Discord</span>
+            <span>Server</span>
+        </title>
+        <text>
+            <iframe 
+                src="https://discord.com/widget?id=1192461672821043300"
+                width="80%" 
+                height="250px" 
+                frameborder="0"
+                allowfullscreen="true"
+                sandbox="allow-same-origin allow-scripts allow-popups">
+                <span>Cannot connect to Discord</span>
+            </iframe>
+        </text>
+    </page>
+    <page id="-1"> 
+        <image>https://pacificyzy.github.io/PacificIsland/Incredibox/ModTemplate/mod/img/merch-cdvinyl.png</image>
+        <title>
+            <span>Please support</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">SO FAR SO GOOD</span>
+            <span>!!!</span>
+        </title>
+        <text>
+            <span>Incredibox is made by</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">SO FAR SO GOOD</span>
+            <span>,</span><br/>
+            <span>Without the efforts of</span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Allan</span>
+            <span>, </span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Romain</span>
+            <span>, and </span>
+            <span style="
+                background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
+                -webkit-background-clip: text;
+                color: transparent;
+            ">Incredible Polo</span>
+            <span>,</span><br/>
+            <span>there would be no Incredibox as we know it today!!!</span><br/><br/>
+            <span>Subscribe to Incredibox!</span><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.Incredibox.com')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>Incredibox</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.sofarsogood.fr')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>SO FAR SO GOOD</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.incredibox.com/info/store')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>Buy Incredibox</span>
+            </button><br/><br/>
+            <button class="mod-text-left" onclick="openExternal('https://www.incredibox.com/demo')">
+                <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
+                <span>Incredibox Demo</span>
+            </button><br/>
+        </text>
+    </page>
+</body>
