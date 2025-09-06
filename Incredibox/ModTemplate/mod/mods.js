@@ -29,5 +29,6 @@ modsList = [
 	},
 
 ];
+loadShowMods();
 
 
