@@ -27,7 +27,7 @@
                 ">PE_Ink</span>
                 <span>: Most Demo texture drawing</span><br/>
                 <span>(including the illustration on the right)</span>
-            </span><br/>
+            </span><br/><br/>
             <span class="mod-text-left">
                 <span onclick="openExternal('https://b23.tv/s9XKlHE')" style="
                     background: linear-gradient(to right, #385692, #FF596F);
@@ -35,7 +35,7 @@
                     color: transparent;
                 ">注视の眼</span>
                 <span>: Some textures (and provision of Demo characters)</span>
-            </span><br/><br/>
+            </span><br/>
             <button class="mod-text-left" onclick="openExternal('https://b23.tv/oLNjc8J')">
                 <img src="mod/logo/bilibili.svg" alt="SVG image" width="15px"/>
                 <span>BiliBili</span>
@@ -47,7 +47,7 @@
             <button class="mod-text-left" onclick="openExternal('https://www.youtube.com/@PacificYZY')">
                 <img src="mod/logo/youtube.svg" alt="SVG image" width="15px"/>
                 <span>YouTube</span>
-            </button><br/>
+            </button><br/><br/>
             
             <span>Follow</span>
             <span onclick="openExternal('https://b23.tv/oLNjc8J')" style="
