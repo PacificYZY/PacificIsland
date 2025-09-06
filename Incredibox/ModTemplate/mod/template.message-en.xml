@@ -125,8 +125,8 @@
                 color: transparent;
             ">Incredible Polo</span>
             <span>,</span><br/>
-            <span>there would be no Incredibox as we know it today!!!</span><br/><br/>
-            <span>Subscribe to Incredibox!</span>
+            <span>there would be no Incredibox as we know it today!!!</span><br/>
+            <span>Subscribe to Incredibox!</span><br/>
             <button class="mod-text-left" onclick="openExternal('https://www.Incredibox.com')">
                 <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
                 <span>Incredibox</span>
