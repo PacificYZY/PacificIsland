@@ -30,7 +30,7 @@ modsList = [
 
 ];
 
-modsShow += "<div id='mods-show-content'><div class='title' id='show-title'>✨New Mods✨</div><div id='box-mods'><div id='slide-mods'>";
+modsShow = "<div id='mods-show-content'><div class='title' id='show-title'>✨New Mods✨</div><div id='box-mods'><div id='slide-mods'>";
 let loadMods = "";
 var modsList = "";
 for (let i = 0; i < modsList.length; i++) {
@@ -44,3 +44,4 @@ for (let i = 0; i < modsList.length; i++) {
 }
 modsShow += loadMods;
 modsShow += "</div></div></div><div class='mod-back'><div class='round' onclick='showContentBack()'><img src='mod/icon/back.svg' alt='SVG Image' width='100%'/></div></div><div class='mod-next'><div class='round' onclick='showContentNext()'><img src='mod/icon/next.svg' alt='SVG Image' width='100%'/></div></div>";
+
