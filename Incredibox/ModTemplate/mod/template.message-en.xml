@@ -25,7 +25,8 @@
                     -webkit-background-clip: text;
                     color: transparent;
                 ">PE_Ink</span>
-                <span>: Most Demo texture drawing (including the illustration on the right)</span>
+                <span>: Most Demo texture drawing</span><br/>
+                <span>(including the illustration on the right)</span>
             </span><br/>
             <span class="mod-text-left">
                 <span onclick="openExternal('https://b23.tv/s9XKlHE')" style="
@@ -46,7 +47,7 @@
             <button class="mod-text-left" onclick="openExternal('https://www.youtube.com/@PacificYZY')">
                 <img src="mod/logo/youtube.svg" alt="SVG image" width="15px"/>
                 <span>YouTube</span>
-            </button><br/><br/>
+            </button><br/>
             
             <span>Follow</span>
             <span onclick="openExternal('https://b23.tv/oLNjc8J')" style="
@@ -54,7 +55,8 @@
                     -webkit-background-clip: text;
                     color: transparent;
                 ">PacificY</span>
-            <span>'s social media accounts to get the latest template🧡</span>
+            <span>'s social media accounts</span><br/>
+            <span>to get the latest template🧡</span>
         </text>
     </page>
     <page id="-2"> 
