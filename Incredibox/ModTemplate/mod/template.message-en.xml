@@ -106,7 +106,7 @@
                 color: transparent;
             ">SO FAR SO GOOD</span>
             <span>,</span><br/>
-            <span>Without the efforts of</span>
+            <span>Without the efforts of</span><br/>
             <span style="
                 background: linear-gradient(to right, #A0A0A0, #D0D0D0, #F0F0F0);
                 -webkit-background-clip: text;
@@ -126,7 +126,7 @@
             ">Incredible Polo</span>
             <span>,</span><br/>
             <span>there would be no Incredibox as we know it today!!!</span><br/><br/>
-            <span>Subscribe to Incredibox!</span><br/>
+            <span>Subscribe to Incredibox!</span>
             <button class="mod-text-left" onclick="openExternal('https://www.Incredibox.com')">
                 <img src="mod/logo/website.svg" alt="SVG image" width="15px"/>
                 <span>Incredibox</span>
