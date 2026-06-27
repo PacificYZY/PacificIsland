@@ -20,11 +20,11 @@
                 <span onclick="openURL('https://b23.tv/s9XKlHE')" style="background:linear-gradient(to right,#385692,#FF596F);-webkit-background-clip:text;color:transparent">注视の眼</span>
                 <span>：部分贴图（以及Demo角色的提供）</span>
             </span><br/>
-            <bottom url='https://qm.qq.com/q/rhJXkcgzPq' bg='#0099FF'>
-                <span>QQ</span>
-            </bottom>
             <bottom url='https://b23.tv/oLNjc8J' bg='#fb7299'>
                 <span>BiliBili</span>
+            </bottom>
+            <bottom url='https://qm.qq.com/q/rhJXkcgzPq' bg='#0099FF'>
+                <span>QQ</span>
             </bottom><br/>
             <bottom url='https://www.youtube.com/@PacificYZY' bg='#e1002d'>
                 <span>YouTube</span>
